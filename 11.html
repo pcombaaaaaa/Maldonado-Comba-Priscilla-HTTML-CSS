@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de contacto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e90000;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #fff;
+        background-color: #e9b2b2;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 20px auto;
+        width: 300px;
+    }
+    
+    form {
+      width: 400px;
+      margin: 0 auto;
+      background-color: #ee5b5b;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #fa0505;
+      border-radius: 4px;
+    }
+    
+    input[type="checkbox"] {
+      margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #f5b0b0;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulario de contacto</h1>
+  <form action="" method="GET">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" maxlength="40" required>
+    
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" maxlength="40" required>
+    
+    <p><label for="sexo">Sexo:</label>
+        <input type="radio" id="hombre" name="sexo" value="hombre" required>
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="sexo" value="mujer" required>
+        <label for="mujer">Mujer</label></p>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <input type="checkbox" id="novedades" name="novedades" checked>
+    <label for="novedades">Deseo recibir novedades y ofertas</label>
+    
+    <input type="checkbox" id="condiciones" name="condiciones" required>
+    <label for="condiciones">He leído y acepto las condiciones generales del programa y la normativa sobre protección de datos</label>
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
