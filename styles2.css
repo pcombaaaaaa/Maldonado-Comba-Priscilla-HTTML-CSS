@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    width: 510px;
+  }
+  
+  tr, td {
+    background-color: white;
+    color: blue;
+    font-family: Arial;
+    border: 1px solid black;
+    padding: 8px 4px;
+  }
+  
+  .caption {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .destacar {
+    background-color: red;
+    color: white;
+  } 
+  #titulos{
+    font-weight: bold;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+  } 
